@@ -1,0 +1,8 @@
+name: Bin
+version: 1.0
+description: Destroys all items in a specifed inventory.
+main: me.Hydroxide.Bin.Main
+commands:
+  bin:
+    description: Opens a portable bin that you can dispose your items into!
+    
