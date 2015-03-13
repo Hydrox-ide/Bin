@@ -12,13 +12,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
 	
-	
-	public void onEnable() {
-		this.getConfig().addDefault("permission", "bin.bin");
-		this.saveDefaultConfig();
-		
-}
-	
 	public boolean onCommand (CommandSender sender, Command command, String commandLabel, String[] args) {
 		Player player = (Player) sender;
 		if(commandLabel.equalsIgnoreCase("bin") && player.hasPermission(getConfig().getString("permission"))) {
