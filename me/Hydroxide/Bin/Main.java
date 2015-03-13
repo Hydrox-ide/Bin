@@ -24,6 +24,7 @@ public class Main extends JavaPlugin implements Listener {
 			return true;
 		} else if (!(player.hasPermission("bin.bin"))) {
 			player.sendMessage(ChatColor.RED + "You do not have permission for that command.");
+			return false;
 		}
 		return false;
 	}
