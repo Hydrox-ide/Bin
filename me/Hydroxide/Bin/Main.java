@@ -14,7 +14,7 @@ public class Main extends JavaPlugin implements Listener {
 	
 	public boolean onCommand (CommandSender sender, Command command, String commandLabel, String[] args) {
 		Player player = (Player) sender;
-		if(commandLabel.equalsIgnoreCase("bin") && player.hasPermission(getConfig().getString("permission"))) {
+		if(commandLabel.equalsIgnoreCase("bin") && player.hasPermission("bin.bin")) {
 			openBin(player);
 		}
 		return false;
