@@ -5,4 +5,5 @@ main: me.Hydroxide.Bin.Main
 commands:
   bin:
     description: Opens a portable bin that you can dispose your items into!
+    permission: bin.bin
     
